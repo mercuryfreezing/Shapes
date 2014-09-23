@@ -29,9 +29,12 @@ int main(int argc, const char * argv[]) {
         XYPoint *xy = [[XYPoint alloc] init];
         [xy setX: 4 andSetY: 6];
 
-        rect1.xy = xy;
+//        rect1.xy = xy;
+//
+//        NSLog(@"Value of X is: %i and Value of Y is: %i", rect1.xy.x, rect1.xy.y);
 
-        NSLog(@"Value of X is: %i and Value of Y is: %i", rect1.xy.x, rect1.xy.y);
+        [rect1 setOrigin:xy];
+        NSLog(@"Value of X is: %i and Value of Y is: %i", rect1.origin.x, rect1.origin.y);
 
 
     }

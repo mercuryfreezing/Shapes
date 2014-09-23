@@ -7,19 +7,23 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "XYPoint.h"
+//#import "XYPoint.h"
+@class XYPoint;
 
 @interface Rectangle: NSObject
 
 @property int width;
 @property int height;
-@property XYPoint *xy;
+//@property XYPoint *xy;
+
 
 
 
 -(void) setHeight: (int) h andWidth: (int) w;
 -(int) area;
--(void) setXYPoint: (XYPoint*) xy;
+//-(void) setXYPoint: (XYPoint*) xy;
+-(void) setOrigin: (XYPoint*) orig;
+-(XYPoint *) origin;
 
 
 
